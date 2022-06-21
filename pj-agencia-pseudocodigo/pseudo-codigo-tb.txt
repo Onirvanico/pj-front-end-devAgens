@@ -1,0 +1,194 @@
+Algoritmo "Sistema DvAgens"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 19/06/2022
+Var
+// Seção de Declarações das variáveis
+opcaoMenu: caracter
+
+usuarios: vetor [1..100] de caracter
+tamanhoVetUsuarios: inteiro
+destinos: vetor [1..100] de caracter
+tamanhoVetDestinos: inteiro
+
+procedimento cadastraUsuario()
+   inicio
+   tamanhoVetUsuarios := tamanhoVetUsuarios + 1
+   escreval("*************Cadastro de Usuário*************")
+   escreva("Digite seu nome: ")
+   leia(usuarios[tamanhoVetUsuarios])
+   tamanhoVetUsuarios := tamanhoVetUsuarios + 1
+   escreva("Digite seu cpf: ")
+   leia(usuarios[tamanhoVetUsuarios])
+   tamanhoVetUsuarios := tamanhoVetUsuarios + 1
+   escreva("Digite sua idade: ")
+   leia(usuarios[tamanhoVetUsuarios])
+   escreval()
+   escreval("Usuário cadastrado com sucesso!")
+   escreval("Nome: ", usuarios[tamanhoVetUsuarios-2])
+   escreval("CPF: ", usuarios[tamanhoVetUsuarios-1])
+   escreval("Idade: ", usuarios[tamanhoVetUsuarios])
+fimprocedimento
+
+procedimento cadastraDestino()
+   inicio
+   tamanhoVetDestinos := tamanhoVetDestinos + 1
+   escreval("*************Cadastro de Destino*************")
+   escreva("Digite o local: ")
+   leia(destinos[tamanhoVetDestinos])
+   tamanhoVetDestinos := tamanhoVetDestinos + 1
+   escreva("Tempo de duração da viagem em dias: ")
+   leia(destinos[tamanhoVetDestinos])
+   tamanhoVetDestinos := tamanhoVetDestinos + 1
+   escreva("Preço por pessoa: ")
+   leia(destinos[tamanhoVetDestinos])
+   escreval()
+   escreval("Destino cadastrado com sucesso!")
+   escreval("Local: ", destinos[tamanhoVetdestinos-2])
+   escreval("Duracao em dias: ", destinos[tamanhoVetDestinos-1])
+   escreval("Valor unitario: ", destinos[tamanhoVetDestinos])
+fimprocedimento
+
+procedimento imprimeDadosUsuario(indice: inteiro)
+   inicio
+   escreval("|-- usuário: ", usuarios[indice], " --|")
+   escreval("|-- cpf : ", usuarios[indice+1], " --|")
+   escreval("|-- idade: ", usuarios[indice+2], " --|")
+fimprocedimento
+
+procedimento listaUsuarios()
+   var
+   i: inteiro
+   inicio
+   para i de 1 ate tamanhoVetUsuarios passo 3 faca
+       imprimeDadosUsuario(i)
+       escreval()
+   fimpara
+fimprocedimento
+
+procedimento consultarUsuario()
+   var
+   nome: caracter
+   i: inteiro
+   encontrouUsuario: logico
+   inicio
+   encontrouUsuario := falso
+   
+   escreval("*************Consulta de Usuário*************")
+   escreva("Nome do usuário: ")
+   leia(nome)
+   se tamanhoVetUsuarios >= 1 entao
+   para i de 1 ate tamanhoVetUsuarios passo 3 faca
+        se Maiusc(nome) = Maiusc(usuarios[i]) entao
+             imprimeDadosUsuario(i)
+             encontrouUsuario := verdadeiro
+        fimse
+   fimpara
+   senao
+        escreval("Até o momento não há usuário cadastrado.")
+   fimse
+   
+   se nao encontrouUsuario entao
+         escreval("Nenhum usuario foi encontrado com o nome informado")
+   fimse
+fimprocedimento
+
+procedimento imprimeDadosDestino(indice: inteiro)
+   inicio
+   escreval("|-- local: ", destinos[indice], " --|")
+   escreval("|-- duracao da viagem em dias : ", destinos[indice+1], " --|")
+   escreval("|-- valor unitario: ", destinos[indice+2], " --|")
+fimprocedimento
+
+procedimento listaDestinos()
+   var
+   i: inteiro
+   inicio
+   para i de 1 ate tamanhoVetDestinos passo 3 faca
+        imprimeDadosDestino(i)
+        escreval()
+   fimpara
+fimprocedimento
+
+procedimento consultarDestino()
+   var
+   destino: caracter
+   i: inteiro
+   encontrouDestino: logico
+   inicio
+   encontrouDestino := falso
+   
+   escreval("*************Consulta de Destino*************")
+   escreva("Local do destino: ")
+   leia(destino)
+   se tamanhoVetDestinos >= 1 entao
+   para i de 1 ate tamanhoVetDestinos passo 3 faca
+        se Maiusc(destino) = Maiusc(destinos[i]) entao
+             imprimeDadosDestino(i)
+             encontrouDestino := verdadeiro
+        fimse
+   fimpara
+   senao
+        escreval("Até o momento não há destino cadastrado.")
+   fimse
+   
+   se nao encontrouDestino entao
+      escreval("Nenhum destino foi encontrado com o local informado.")
+   fimse
+fimprocedimento
+
+procedimento imprimeTotalUsuarios()
+   inicio
+   escreval()
+   escreval(tamanhoVetUsuarios / 3, " usuario(s) cadastrado(s) no sistema.")
+fimprocedimento
+
+procedimento imprimeTotalDestinos()
+   inicio
+   escreval()
+   escreval(tamanhoVetDestinos / 3, " destino(s) cadastrado(s) no sistema.")
+fimprocedimento
+
+Inicio
+  tamanhoVetUsuarios := 0
+  tamanhoVetDestinos := 0
+  // para x de 1 ate 10 passo 3 faca
+
+  escreval("***********************************************")
+  escreval("****** Menu de Cadastro Agencia DvAgens *******")
+  escreval("***********************************************")
+  escreval()
+  opcaoMenu := ""
+  enquanto opcaoMenu <> "9" faca
+     escreval()
+     escreval()
+     escreval("[ Escolha 1 - cadastro de usuario / 2 - cadastro de destino")
+     escreval("  3 - consutar usuario / 4 - consultar destino")
+     escreval("  5 - total usuarios cadastrados / 6 - total destinos cadastrados")
+     escreval("  7 - listar usuarios / 8 - listar destinos / 9 - sair ]")
+     leia(opcaoMenu)
+     limpatela
+     escolha opcaoMenu
+       caso "1"
+            cadastraUsuario()
+       caso "2"
+            cadastraDestino()
+       caso "3"
+            consultarUsuario()
+       caso "4"
+            consultarDestino()
+       caso "5"
+            imprimeTotalUsuarios()
+       caso "6"
+            imprimeTotalDestinos()
+       caso "7"
+            listaUsuarios()
+       caso "8"
+            listaDestinos()
+     fimescolha
+  fimenquanto
+  escreva("Nao se esqueca de fechar a janela do programa. ;")
+  escreval()
+Fimalgoritmo
