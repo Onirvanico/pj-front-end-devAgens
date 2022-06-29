@@ -1,11 +1,7 @@
 Algoritmo "Sistema DvAgens"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 19/06/2022
+
 Var
-// Seção de Declarações das variáveis
+
 opcaoMenu: caracter
 
 usuarios: vetor [1..100] de caracter
@@ -16,7 +12,7 @@ tamanhoVetDestinos: inteiro
 procedimento cadastraUsuario()
    inicio
    tamanhoVetUsuarios := tamanhoVetUsuarios + 1
-   escreval("*************Cadastro de Usuário*************")
+   escreval("*************Cadastro de Usuï¿½rio*************")
    escreva("Digite seu nome: ")
    leia(usuarios[tamanhoVetUsuarios])
    tamanhoVetUsuarios := tamanhoVetUsuarios + 1
@@ -26,7 +22,7 @@ procedimento cadastraUsuario()
    escreva("Digite sua idade: ")
    leia(usuarios[tamanhoVetUsuarios])
    escreval()
-   escreval("Usuário cadastrado com sucesso!")
+   escreval("Usuï¿½rio cadastrado com sucesso!")
    escreval("Nome: ", usuarios[tamanhoVetUsuarios-2])
    escreval("CPF: ", usuarios[tamanhoVetUsuarios-1])
    escreval("Idade: ", usuarios[tamanhoVetUsuarios])
@@ -39,10 +35,10 @@ procedimento cadastraDestino()
    escreva("Digite o local: ")
    leia(destinos[tamanhoVetDestinos])
    tamanhoVetDestinos := tamanhoVetDestinos + 1
-   escreva("Tempo de duração da viagem em dias: ")
+   escreva("Tempo de duraï¿½ï¿½o da viagem em dias: ")
    leia(destinos[tamanhoVetDestinos])
    tamanhoVetDestinos := tamanhoVetDestinos + 1
-   escreva("Preço por pessoa: ")
+   escreva("Preï¿½o por pessoa: ")
    leia(destinos[tamanhoVetDestinos])
    escreval()
    escreval("Destino cadastrado com sucesso!")
@@ -53,7 +49,7 @@ fimprocedimento
 
 procedimento imprimeDadosUsuario(indice: inteiro)
    inicio
-   escreval("|-- usuário: ", usuarios[indice], " --|")
+   escreval("|-- usuï¿½rio: ", usuarios[indice], " --|")
    escreval("|-- cpf : ", usuarios[indice+1], " --|")
    escreval("|-- idade: ", usuarios[indice+2], " --|")
 fimprocedimento
@@ -76,8 +72,8 @@ procedimento consultarUsuario()
    inicio
    encontrouUsuario := falso
    
-   escreval("*************Consulta de Usuário*************")
-   escreva("Nome do usuário: ")
+   escreval("*************Consulta de Usuï¿½rio*************")
+   escreva("Nome do usuï¿½rio: ")
    leia(nome)
    se tamanhoVetUsuarios >= 1 entao
    para i de 1 ate tamanhoVetUsuarios passo 3 faca
@@ -87,7 +83,7 @@ procedimento consultarUsuario()
         fimse
    fimpara
    senao
-        escreval("Até o momento não há usuário cadastrado.")
+        escreval("Atï¿½ o momento nï¿½o hï¿½ usuï¿½rio cadastrado.")
    fimse
    
    se nao encontrouUsuario entao
@@ -131,7 +127,7 @@ procedimento consultarDestino()
         fimse
    fimpara
    senao
-        escreval("Até o momento não há destino cadastrado.")
+        escreval("Atï¿½ o momento nï¿½o hï¿½ destino cadastrado.")
    fimse
    
    se nao encontrouDestino entao
