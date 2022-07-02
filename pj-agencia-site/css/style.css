@@ -4,24 +4,19 @@ html {
 }
 
 .app {
-    flex-direction: grid;
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: "header"
                           "main"
                           "footer";
-    background-color: azure;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(247, 255, 255);
+    font-family: 'Truculenta', sans-serif;;
 }
+
 
 .app_header {
     grid-area: header;
-    background-color: blueviolet;
-}
-
-section {
-    height: 100vh;
-    background-color: darkcyan;
 }
 
 .app_main {
@@ -30,7 +25,18 @@ section {
 
 .app_footer {
     grid-area: footer;
-    background-color: cornflowerblue;
-    padding: 1rem;
+    padding: .7rem;
     text-align: center;
+}
+
+.carousel_image {
+   
+    object-fit: cover;
+    
+}
+
+.carousel-caption {
+    border-radius: 5px;
+    padding: 5.rem;
+    background-color: rgba(0, 0, 0, .5);
 }

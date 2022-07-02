@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevAgens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz@12..72&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="app">
+  <header class="app_header">
+    <div class="p-3 bg-dark text-white app_header">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="home.html" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="destino.html" class="nav-link px-2 text-white">Destino</a></li>
+            <li><a href="promocoes.html" class="nav-link px-2 text-white">Promoções</a></li>
+            <li><a href="contato.html" class="nav-link px-2 text-white">Contato</a></li>
+            <li><a href="sobre-nos.html" class="nav-link px-2 text-white">Sobre nós</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Procurar">
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Entrar</button>
+            <button type="button" class="btn btn-warning">Registrar-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="myCarousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img carousel_image" width="100%" height=400px"
+            src="assets/bonito-mato-grosso-do-sul.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <rect width="100%" height="100%" fill="#777" /></img>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Bonito - Mato Grosso do Sul</h1>
+              <p>A cidade tem um ritmo de cidade de interior e dezenas de passeios para fazer, que incluem flutuação em
+                rios cristalinos, caminhadas e banhos de cachoeira.Deserto do Atacama</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img carousel_image" width="100%" height="400px" src="assets/pirenopolis-goias.jpg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777" /></img>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Pirenópolis - Goiás</h1>
+              <p>É uma cidade com várias cachoeiras ao seu redor e uma excelente estrutura para quem quer ficar bem
+                hospedado, com diversas opções de pousadas charmosas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img carousel_image" width="100%" height="400px"
+            src="assets/praia-do-forte-bahia.jpeg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <rect width="100%" height="100%" fill="#777" /></img>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1> Praia do Forte (Mata de São João) - Bahia</h1>
+              <p>É um lugar delicioso para aproveitar o mar, suas paisagens naturais, conhecer o famoso Projeto Tamar e
+                relaxar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">próximo</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing mt-5 p-3" style="border-radius: 10px;">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4 ">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/lencois-maranhenses.webp"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Imagem Lençóis Maranheses</title>
+          <rect width="100%" height="100%" fill="#777" /></img>
+
+          <h2 class="fw-normal">Os 7 principais pontos turísticos no Maranhão</h2>
+          <p>Surreal! Esta é palavra que define os encantos do Maranhão, quando nos deparamos com os olhos verdes ou azuis de suas lagoas e lagos a fitar o céu azul do nordeste.</p>
+          <p><a class="btn btn-secondary" href="#">Saiba mais</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 flex-grow-1">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="assets/laguna-69-yungay-huaraz-peru.webp" role="img" aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Imagem Huaraz</title>
+          <rect width="100%" height="100%" fill="#777" /></img>
+
+          <h2 class="fw-normal">Huaraz: roteiro pelas lagunas e pontos turísticos </h2>
+          <p>Entre os picos nevados da Cordillera Blanca, é possível encontrar lagos cinematográficos em tons de turquesa em meio às trilhas. São paisagens, literalmente, de tirar o fôlego!</p>
+          <p><a class="btn btn-secondary" href="#">Saiba mais</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/deserto-atacama.webp"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777" /></img>
+          <h2 class="fw-normal">Deserto do Atacama, Chile: um dos lugares mais incríveis para visitar!</h2>
+          <p>O Deserto do Atacama, Chile, parece até uma paisagem de outro mundo, com várias opções de passeios, expedições e cenários incríveis esperando para serem explorados.</p>
+          <p><a class="btn btn-secondary" href="#">Saiba mais</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Planejamento com plano familiar</h2>
+          <p class="lead">Pacotes pensados em como agradar a todos os membros da família, dos mais jovens ao mais idosos. Momentos inesquecíveis que jamais serão esquecidos.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" src="assets/familia-viajando.jpg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /></img>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Lua de mel para recém-casados? Tem!</h2>
+          <p class="lead">Às vezes parece ser um grande desafio planejar uma lua de mel em lugares românticos e definir as melhores rotas. Não precisa se preocupar, temos pacotes para vocês!</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" src="assets/home-e-mulher-viajando.jpg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Imagem casal com malas de viagem</title>
+          <rect width="100%" height="100%" fill="#eee" />
+          </img>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Amigos para qualquer parada</h2>
+          <p class="lead">Taí uma das melhores coisas da vida, reunir os amigos e se divertir. Melhor ainda é sair por aí "mundo a fora" com todos os seus parceiros e conhecer lugares incríveis, por isso, planejamos pacotes bem legais para vocês.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" src="assets/grupo-amigos.jpg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Imagem grupo de amigos</title>
+            <rect width="100%" height="100%" fill="#eee" />
+        </img>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end">Todos os direitos reservados.</p>
+      <p>&copy; 2022 DevAgens Company, Inc.</p>
+    </footer>
+  </main>
+
+  <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
