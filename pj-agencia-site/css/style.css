@@ -11,7 +11,7 @@ html {
                           "main"
                           "footer";
     background-color: rgb(247, 255, 255);
-    font-family: 'Truculenta', sans-serif;;
+    font-family: 'Truculenta', sans-serif;
 }
 
 
@@ -37,6 +37,6 @@ html {
 
 .carousel-caption {
     border-radius: 5px;
-    padding: 5.rem;
+    padding: .5rem;
     background-color: rgba(0, 0, 0, .5);
 }
