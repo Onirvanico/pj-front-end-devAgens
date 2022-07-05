@@ -30,9 +30,7 @@ html {
 }
 
 .carousel_image {
-   
     object-fit: cover;
-    
 }
 
 .carousel-caption {
