@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz@12..72&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
@@ -44,15 +48,242 @@
     </div>
   </header>
   <main>
-    <div class="card bg-dark text-white m-5">
-      <img src="assets/deserto-atacama.webp" height="400px" class="card-img featured_img" alt="...">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-        <p class="card-text">Last updated 3 mins ago</p>
+    <section>
+      <div class="container-fluid bg-dark p-4 mt-5">
+        <form class="row g-3 justify-content-center mt-2">
+          <div class="col-md-3" style="position: relative;">
+            <label for="validationCustom03" class="form-label text-white">Local</label>
+            <input type="text" class="form-control" id="validationCustom03" style="padding-left: 1.5rem ;" required>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-geo-alt icon_location mb-2" viewBox="0 0 16 16">
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom03" class="form-label text-white">Data</label>
+            <input type="date" class="form-control" id="validationCustom03" required>
+          </div>
+          <div class="col-md-3 d-flex justify-content-start align-self-end">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </div>
+        </form>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="card bg-dark text-white m-5">
+        <img src="assets/bonito-mato-grosso-do-sul.jpg" height="400px" class="card-img featured_img"
+          alt="Imagem de Caverna">
+        <div class="card-img-overlay text-center" style="background-color: rgba(0, 0, 0, .3);">
+          <h1 class="card-title">Destaque da semana</h1>
+          <p class="card-text fs-2 fw-semibold">Bonito - Mato Grosso do sul.</p>
+          <p class="text-decoration-line-through text-inline">De R$ 2.750,00</p>
+          <p style="display: inline; vertical-align: middle;">Por R$ 1.990,00</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+              d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+          </svg>
+          <div class="d-flex justify-content-center mt-5">
+            <a role="button" class="btn btn-success btn-lg" style="display: block;" href="pagamento.html">Eu quero!!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -25% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/ilhas-galapagos.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Ilhas Galápagos</title><rect width="100%" height="100%" fill="#55595c"/></img>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Ilhas Galápagos – Equador</h5>
+                  <p class="card-text">Com aproximadamente 25 mil habitantes e muitos turistas, esta ilha é um dos lugares incríveis para viajar. Os cruzeiros pela ilha, animais locais e a natureza fazem o passeio ser inesquecível.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 2.549,00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -33% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/krabi-tailandia.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Krabi</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Krabi – Tailândia</h5>
+                  <p class="card-text">Krabi, uma província da Tailândia, é composta por 130 ilhas, e é muito buscada por quem deseja encontrar um local sem muita agitação. Os mares transparentes e as paisagens são de tirar o fôlego.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 4.619,00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -19% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/roatan-honduras.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Roatán</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Roatán – Honduras</h5>
+                  <p class="card-text">A ilha de Roatán, localizada no litoral norte de Honduras, não é um dos mais comentados destinos do Caribe. Ainda assim, suas águas quentes e cristalinas trazem para região uma paisagem paradisíaca.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 3.205,95</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -45% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/seychelles-africa.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Seychellesr</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Seychelles – África</h5>
+                  <p class="card-text">Seychelles, na África, é um país localizado no Oceano Índico. Seu território conta com 115 ilhas com praias de areia clara e águas extremamente transparentes. É uma região de paisagem única, por isso os moradores e nativos promovem o turismo sustentável.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 1.999,00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -51% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/calcuta-india.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Calcutá</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Calcutá – Índia</h5>
+                  <p class="card-text">Calcutá é uma cidade da Índia popularmente conhecida pelas décadas de trabalho que Madre Teresa dedicou à população da região. Suas construções fazem de Calcutá um destino certeiro para quem busca lugares incríveis para viajar.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 4.749,00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -17% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/muscat-oma.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Muscat</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Muscat – Omã</h5>
+                  <p class="card-text">Muscat, em Omã, é uma cidade rodeada por montanhas e banhada pelo Oceano Índico. A capital e maior cidade de Omã reúne em sua beleza natural tanto montanhas quanto dunas e praias.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 1.850,00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -12% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/luang-prabang-laos.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Luang Prabang – Laos</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Luang Prabang – Laos</h5>
+                  <p class="card-text">Luang Prabang, localizada em Laos, na Ásia, é um vilarejo de ares franceses em meio às montanhas. É banhada por dois rios e guarda em seu território uma das mais belas cachoeiras de todo o mundo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 5.287,75</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -15% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/uyuni-bolivia.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Uyuni</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Uyuni – Bolívia</h5>
+                  <p class="card-text">O Salar de Uyuni, na Bolívia, é um gigantesco deserto de sal rodeado por vulcões. O destino fica a aproximadamente 4 mil metros de altura e sua beleza se dá pela grande imensidão branca do mar de sal.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 2.900,00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm card_scale">
+                <span class="item_discount"> -29% </span>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/torres-del-paine-chile.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Torres Del Paine</title><rect width="100%" height="100%" fill="#55595c"/></img>
+    
+                <div class="card-body">
+                  <h5 class="card-title">Torres del Paine – Chile</h5>
+                  <p class="card-text">Localizada no Sul da Patagônia, além de ser um dos lugares incríveis para viajar, Torres del Paine faz parte de uma reserva ambiental declarada pela Unesco. Essa área possui muitos animais exóticos, geleiras, campos e lagos para atividades de ecoturismo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a role="button" class="btn btn-sm btn-outline-secondary" href="pagamento.html">Comprar</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                      </svg></button>
+                    </div>
+                    <small class="text-success fw-bold">R$ 3.165,65</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
   </main>
   <footer class="container">
     <hr class="featurette-divider">

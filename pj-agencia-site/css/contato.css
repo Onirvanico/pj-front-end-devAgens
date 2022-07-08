@@ -48,7 +48,7 @@
  }
  .contato_app_aside nav ul li {
     margin-bottom: 1rem;
-    width: 30%;
+    max-width: 4em;
     display: block;
  }
 
@@ -81,7 +81,7 @@
 }
 
 #container_form {
-    background-color: rgb(51, 83, 90);
+    background-color: rgb(51, 83, 90, .5);
     color: antiquewhite;
     padding: .5rem;
     margin-top: 1rem;
