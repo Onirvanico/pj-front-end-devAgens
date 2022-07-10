@@ -1,35 +1,35 @@
-.populares {
+.destinos {
     margin: 1rem;
     background-color: whitesmoke;
 }
 
-.populares__conteudo {
+.destinos__conteudo {
     display: flex;
     flex-wrap: wrap;
     grid-area: conteudo;
     padding: 1rem 0;
 }
 
-.populares__cabecalho {
+.destinos__cabecalho {
     display: flex;
     justify-content: space-between;
 }
 
-.populares__icone {
+.destinos__icone {
     margin-right: .25rem;
 }
 
-.populares__titulo {
+.destinos__titulo {
     font-weight: 500;
 }
 
-.populares__botao {
+.destinos__botao {
     background-color: transparent;
     border: none;
     color: #333;
 }
 
-.populares__card {
+.destinos__card {
     background-color: #fdfdfd;
     display: grid;
     grid-template-columns: 100%;
@@ -39,17 +39,17 @@
     
 }
 
-.populares__card:nth-last-child() {
+.destinos__card:nth-last-child() {
     margin-right: 0;
 }
 
-.populares__card___imagem {
+.destinos__card___imagem {
     width: 100%;
     height: 100%;
     grid-area: card-image;
 }
 
-.populares__card___corpo {
+.destinos__card___corpo {
     grid-area: card-content;
     display: grid;
     padding: .5rem;
@@ -59,17 +59,17 @@
                          "body";
 }
 
-.populares__card___titulo {
+.destinos__card___titulo {
     font-size: 1.5rem;
     color: #333;
 }
 
-.populares__card___data {
+.destinos__card___data {
     color: rgba(0, 0, 0, .5);
     font-size: .9rem;
 }
 
-.populares__card___descricao {
+.destinos__card___descricao {
     text-align: justify;
     color: #333;
     line-height: 1.5rem;
