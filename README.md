@@ -1,2 +1,3 @@
-# pj-modulo-2
-Projeto de cadastro de cliente e destino em pseudocodigo e um site no contexto de uma agência de viagens.
+# Projeto individual - Modulo 2
+   - Projeto de cadastro de cliente e destino em pseudocodigo com consulta
+   = Site no contexto de uma agência de viagens.
