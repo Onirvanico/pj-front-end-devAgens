@@ -26,7 +26,7 @@
     grid-row: 2 / 3;
     grid-column: 1 / 1;
     background-color: rgb(247, 255, 255);
-    overflow: auto;
+    
 }
 
 .contato_app_footer {
@@ -44,20 +44,20 @@
    color: darkslategrey;
 }
 
-.contato_app_aside nav {
+.contato_app_aside div {
     max-height: 35vh;
  }
 
- .contato_app_aside nav ul {
+ .contato_app_aside div ul {
      padding-left: 0;
  }
- .contato_app_aside nav ul li {
+ .contato_app_aside div ul li {
     margin-bottom: 1rem;
     max-width: 4em;
     display: block;
  }
 
- .contato_app_aside nav ul li a:hover {
+ .contato_app_aside div ul li a:hover {
      color: white;
  }
 
